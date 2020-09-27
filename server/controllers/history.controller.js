@@ -10,9 +10,7 @@ historyCtrl.createHistoryEntry = async (req, res) => {
   });
 
   await history.save();
-  res.json({
-    status: "entry created",
-  });
+  res.send(history._id)
 };
 
 historyCtrl.getHistory = async (req, res) => {

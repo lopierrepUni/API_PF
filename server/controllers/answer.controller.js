@@ -19,9 +19,7 @@ answerCtrl.createAnswer = async (req, res) => {
   );
 
   await History.findById(req.params.id).populate("answer");
-  res.json({
-    status: "answer created",
-  });
+  res.send(answer._id)
 };
 
 answerCtrl.getAnswerByHistoryEntry = async (req,res) =>{
