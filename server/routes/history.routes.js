@@ -3,4 +3,5 @@ const router = express.Router();
 const history = require('../controllers/history.controller')
 router.get("/", history.getHistory)
 router.post('/', history.createHistoryEntry)
+router.put('/:id', history.updateEntry)
 module.exports = router;
