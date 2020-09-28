@@ -20,3 +20,11 @@ agregas en un json estos campos
 }
 
 para ver las respuesta de esa entrada en especifica del historial te vas a http://localhost:3000/api/answer/id donde id es el _id de esa entrada. Con get request
+
+Para actualizar la entrada en el historial con el tiempo y score vas con put request a http://localhost:3000/api/history/id donde id es el _id de esa entrada. 
+te pide estos campos 
+
+{
+    "time": "344",
+    "score": "10"
+}
