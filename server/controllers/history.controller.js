@@ -21,11 +21,10 @@ historyCtrl.getHistory = async (req, res) => {
 };
 
 historyCtrl.updateEntry = async (req, res) => {
-  const history = new History({
-    level: req.body.level,
+  const history = {
     score: req.body.score,
     time: req.body.time,
-  });
+  };
 
   await History.findByIdAndUpdate(
     req.params.id,
