@@ -5,6 +5,8 @@ const HistorySchema = new Schema(
   {
     user_id: String,
     level: String,
+    time: String,
+    score: String,
     answer: {
       type: Schema.Types.ObjectId,
       ref: "Answer",

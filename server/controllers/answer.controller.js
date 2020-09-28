@@ -5,6 +5,7 @@ const answerCtrl = {};
 
 answerCtrl.createAnswer = async (req, res) => {
   const answer = new Answer({
+    questionNumber : req.body.questionNumber,
     index: req.body.index,
     answer: req.body.answer,
     pos_x: req.body.pos_x,
