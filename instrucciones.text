@@ -28,3 +28,22 @@ te pide estos campos
     "time": "344",
     "score": "10"
 }
+
+
+para crear un usuario te vas a  http://localhost:3000/api/users con post request 
+
+{  
+    "name": "sjskkss",
+    "email": "ewkwk@gmail.com",
+    "password": "124"
+}
+
+cuando creas el usuario en seguida se crea un estudiante y te manda el ID 
+
+
+para crear una entrada en el historial ahora necesitas irte con post request a  http://localhost:3000/api/history/id donde id es el id que te acaba de arrojar postman 
+al momento de crear el usuario
+
+para ver que si se guardo la entrada en el estudiante te vas con get request a  http://localhost:3000/api/students/id donde id es el mismo id de usuario. las demas entradas de respuesta 
+quedan igual 
+

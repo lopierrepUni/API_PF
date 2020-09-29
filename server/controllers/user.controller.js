@@ -16,16 +16,14 @@ userCtrl.createUser = async (req, res) => {
     password: req.body.password,
   });
 
-  const student = (new Student() = {
+  const student = new Student({
     name: req.body.name,
     email: req.body.email,
     password: req.body.password,
   });
   await student.save();
   await user.save();
-  res.json({
-    status: "User Created",
-  });
+  res.send(user._id)
 };
 
 userCtrl.logIn = async (req, res) => {
@@ -41,3 +39,6 @@ userCtrl.logIn = async (req, res) => {
     status: "you are logged",
   });
 };
+
+
+module.exports = userCtrl;

@@ -3,7 +3,10 @@ const { Schema } = mongoose;
 
 const HistorySchema = new Schema(
   {
-    user_id: String,
+    user_id: {
+      type: Schema.Types.ObjectId,
+      ref: "Student",
+    },
     level: String,
     time: String,
     score: String,
