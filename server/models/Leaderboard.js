@@ -3,9 +3,13 @@ const { Schema } = mongoose;
 
 const LeaderboardSchema = new Schema(
   {
-    user_name: String,
+    user_id: {
+      type: Schema.Types.ObjectId,
+      ref: "Student",
+    },
     score: Number,
     time: Number,
+    
   },
   {
     timestamps: true,

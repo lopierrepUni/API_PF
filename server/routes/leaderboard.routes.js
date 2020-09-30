@@ -4,7 +4,9 @@ const router = express.Router();
 const leaderboard = require("../controllers/leaderboard.controller");
 
 router.get("/", leaderboard.getAll);
-router.post("/", leaderboard.createInstance);
-router.route("/:id", leaderboard.updateInstance);
+router.get("/:id/:number", leaderboard.showBest);
+
+router.post("/:id", leaderboard.createInstance);
+router.put("/:id", leaderboard.updateInstance);
 
 module.exports = router;
