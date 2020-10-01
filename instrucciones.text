@@ -50,3 +50,5 @@ quedan igual
 
 para ver el mejor score del estudiante te vas con get request a http://localhost:3000/api/students/id/level donde id es el id del usuario y level el numero
 del nivel (1,2,3,4) la respuesta es un objeto del historial donde tendras la fecha, score, time. Se saca ese objeto calculado el mejor score obviamente
+
+
